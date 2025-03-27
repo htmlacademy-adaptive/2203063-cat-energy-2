@@ -1,0 +1,47 @@
+.hero{
+    background-color: blue;
+    padding-top: 27px;
+}
+
+.hero__title{
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald', 'Arial', sans-serif;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 23px;
+}
+
+.hero__slogan{
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald', 'Arial', sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    display: block;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.hero__link{
+    font-family: "Oswald", "Arial", sans-serif;
+    text-decoration: none;
+    font-weight: 400;
+    line-height: 40px;
+    color: #ffffff;
+    background-color: #68b738;
+    text-align: center;
+    display: block;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    border: none;
+    margin: 0 auto;
+    width: 280px;
+}

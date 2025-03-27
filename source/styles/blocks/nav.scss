@@ -1,0 +1,16 @@
+.nav{
+    position: relative;
+}
+
+.nav__toggle{
+    position: absolute;
+    top: -45px;
+    right: 22px;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: red;
+}
+.nav__list{
+    display: none;
+}
