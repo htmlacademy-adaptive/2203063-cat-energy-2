@@ -10,6 +10,16 @@
   color: #000000;
   margin: 0 0 30px;
   padding: 0 0 0 71px;
+  position: relative;
+
+  // &::before{}
+  &::after{
+    content: "";
+    width: 36px;
+    height: 50px;
+    position: absolute;
+    background: url("../../icons/stack.svg#slim") no-repeat 0 0;
+  }
 }
 
 .program__text {

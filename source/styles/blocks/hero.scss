@@ -1,24 +1,71 @@
-.hero{
-    background-color: blue;
+.hero {
+    font-family: $oswald;
+}
+
+.hero__wrapper {
+    padding-bottom: 135px;
+    position: relative;
+    margin-bottom: 3px;
+
+    &::before {
+        content: "";
+        width: 280px;
+        height: 270px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+        background-image:
+            image-set(url("../../images/index-can-m@1x.webp") type("image/webp") 1x,
+                url("../../images/index-can-m@2x.webp") type("image/webp") 2x,
+                url("../../images/index-can-m@1x.jpg") type("image/jpg") 1x,
+                url("../../images/index-can-m@2x.jpg") type("image/jpg") 2x);
+    }
+}
+
+.hero__block {
     padding-top: 27px;
+    background-image:
+        image-set(url("../../images/index-cat-m@1x.webp") type("image/webp") 1x,
+            url("../../images/index-cat-m@2x.webp") type("image/webp") 2x,
+            url("../../images/index-cat-m@1x.jpg") type("image/jpg") 1x,
+            url("../../images/index-cat-m@2x.jpg") type("image/jpg") 2x);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-color: #414045;
+    position: relative;
+    padding-bottom: 138px;
+    background-size: auto 100%;
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $thema;
+        opacity: 0.85;
+    }
 }
 
-.hero__title{
-    padding: 0;
-    margin: 0;
-    font-family: 'Oswald', 'Arial', sans-serif;
+.hero__title {
     color: #ffffff;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 36px;
     text-align: center;
-    margin-bottom: 23px;
+    margin: 0 auto 27px;
+    padding: 0;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 36px;
+    width: 280px;
+    position: relative;
+    z-index: 5;
 }
 
-.hero__slogan{
+.hero__slogan {
     padding: 0;
     margin: 0;
-    font-family: 'Oswald', 'Arial', sans-serif;
     color: #ffffff;
     text-transform: uppercase;
     font-weight: 400;
@@ -27,21 +74,21 @@
     display: block;
     text-align: center;
     margin-bottom: 25px;
+    position: relative;
+    z-index: 5;
 }
 
-.hero__link{
-    font-family: "Oswald", "Arial", sans-serif;
+.hero__link {
     text-decoration: none;
     font-weight: 400;
     line-height: 40px;
     color: #ffffff;
-    background-color: #68b738;
+    background-color: $thema;
     text-align: center;
     display: block;
-    padding: 0px 20px;
+    padding: 0 20px;
     box-sizing: border-box;
     text-transform: uppercase;
     border: none;
-    margin: 0 auto;
-    width: 280px;
+    margin: 0 20px;
 }
