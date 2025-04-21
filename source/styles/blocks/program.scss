@@ -1,7 +1,13 @@
 .program {
-  margin-top: 17px;
+  margin-top: 20px;
   padding: 20px;
   background: $background-color;
+
+  @media (min-width: $tablet-width) {
+    padding: 89px 315px 58px 52px;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
 }
 
 .program__header {
@@ -15,7 +21,32 @@
   padding-left: 70px;
   position: relative;
 
-  // &::before{}
+  &::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: $theme;
+    border-radius: 50%;
+    top: -5px;
+    left: 1px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      top: -4px;
+      left: 392px;
+    }
+  }
+}
+
+.program__header--slim {
   &::after {
     content: "";
     width: 36px;
@@ -25,6 +56,29 @@
     top: -8px;
     left: 7px;
   }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: "";
+      width: 170px;
+      height: 194px;
+      position: absolute;
+      bottom: -127px;
+      right: -235px;
+    }
+  }
+}
+
+.program__header--pro {
+  &::after {
+    content: "";
+    width: 67px;
+    height: 28px;
+    position: absolute;
+    background: url("../../icons/stack.svg#slim-2") no-repeat 0 0;
+    top: 5px;
+    left: -8px;
+  }
 }
 
 .program__text {
@@ -32,9 +86,14 @@
   line-height: 18px;
   margin: 0;
   color: #444444;
-  padding-bottom: 21px;
+  padding-bottom: 18px;
   margin-bottom: 17px;
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    border-bottom: none;
+  }
 }
 
 .program__link {

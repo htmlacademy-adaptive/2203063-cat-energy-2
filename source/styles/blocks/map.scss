@@ -1,0 +1,15 @@
+.map__google {
+  background-image:
+    image-set(url("../../images/map-m@1x.webp") type("image/webp") 1x,
+    url("../../images/map-m@2x.webp") type("image/webp") 2x,
+    url("../../images/map-m@1x.jpg") type("image/jpg") 1x,
+    url("../../images/map-m@2x.webp") type("image/jpg") 2x);
+}
+
+.map__google iframe {
+  border: none;
+  display: block;
+  width: 100%;
+  height: 362px;
+}
+

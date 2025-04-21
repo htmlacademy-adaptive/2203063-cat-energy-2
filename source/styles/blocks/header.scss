@@ -2,10 +2,23 @@
   padding-top: 64px;
   position: relative;
   background: url("../../images/logo/logo-mobile-text.svg") no-repeat center 23px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 25px;
+    background: none;
+    padding-left: 30px;
+    padding-right: 14px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .header__logo {
   position: absolute;
   top: 13px;
   left: 22px;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+  }
 }

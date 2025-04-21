@@ -1,16 +1,26 @@
-.nav{
-    position: relative;
+.nav {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    min-width: 63%;
+  }
 }
 
-.nav__toggle{
-    position: absolute;
-    top: -45px;
-    right: 22px;
-    width: 24px;
-    height: 24px;
-    border: none;
-    background: red;
-}
-.nav__list{
+.nav__toggle {
+  position: absolute;
+  top: -45px;
+  right: 22px;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: red;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.nav__list {
+  //display: none;
 }

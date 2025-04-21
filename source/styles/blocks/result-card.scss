@@ -1,0 +1,25 @@
+.result-card {
+  position: relative;
+}
+
+.result-card__numbers {
+  font-family: $oswald;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding: 9px 0;
+}
+
+.result-card__text {
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+  width: 81px;
+  padding: 0 4px;
+  position: absolute;
+  bottom: -28px;
+  right: 18px;
+  color: #444444;
+  background: #eaeaea;
+}

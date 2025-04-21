@@ -1,11 +1,40 @@
 .example {
-  background: red;
+  background: #eaeaea;
+  padding: 20px 20px 0;
 }
 
 .example__header {
-  color: #000000;
-  margin: 0 0 36px;
-  font-family: "Oswald", "Arial", sans-serif;
+  margin: 0 0 33px;
+  font-family: $oswald;
   font-size: 36px;
   font-weight: 400;
+}
+
+.example__text {
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 20px;
+}
+
+.example__list {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 33px;
+}
+
+.example__item {
+  list-style-type: none;
+  margin: 0;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  min-width: 122px;
+}
+
+.example__total {
+  font-family: $oswald;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-bottom: 34px;
+  text-align: center;
 }
