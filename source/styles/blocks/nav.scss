@@ -9,18 +9,53 @@
 .nav__toggle {
   position: absolute;
   top: -45px;
-  right: 22px;
+  right: 20px;
   width: 24px;
   height: 24px;
   border: none;
-  background: red;
+  background-image: url("../../icons/close-menu.svg");
+  background-color: #ffffff;
   cursor: pointer;
+  display: none;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
-.nav__list {
-  //display: none;
+.nav--closed .nav__list {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.nav--closed .nav__toggle {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.nav--opened .nav__list {
+  display: block;
+  position: absolute;
+  width: 100%;
+  background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
+}
+
+.nav--opened .nav__toggle {
+  display: block;
+  background-image: url("../../icons/open-menu.svg");
+  background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

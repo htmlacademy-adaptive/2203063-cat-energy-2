@@ -9,6 +9,12 @@
   text-align: center;
   margin: 0;
   padding: 9px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    width: 162px;
+    padding: 10px 0 15px;
+  }
 }
 
 .result-card__text {
@@ -22,4 +28,12 @@
   right: 18px;
   color: #444444;
   background: #eaeaea;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    background-color: #ffffff;
+    width: 130px;
+    padding: 0;
+    margin: 0 0 21px;
+  }
 }

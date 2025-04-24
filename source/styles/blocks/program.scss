@@ -4,9 +4,14 @@
   background: $background-color;
 
   @media (min-width: $tablet-width) {
-    padding: 89px 315px 58px 52px;
+    padding: 69px 320px 58px 53px;
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 40px;
+    padding: 68px 0 62px;
   }
 }
 
@@ -34,14 +39,26 @@
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
+    padding: 0;
+    margin: 0 0 15px;
 
     &::before {
-      content: "";
-      position: absolute;
       width: 200px;
       height: 200px;
-      top: -4px;
-      left: 392px;
+      top: 23px;
+      left: 393px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 214px;
+    margin: 0 0 65px;
+
+    &::before {
+      width: 100px;
+      height: 100px;
+      top: -21px;
+      left: 52px;
     }
   }
 }
@@ -59,12 +76,19 @@
 
   @media (min-width: $tablet-width) {
     &::after {
-      content: "";
-      width: 170px;
+      width: 140px;
       height: 194px;
-      position: absolute;
-      bottom: -127px;
-      right: -235px;
+      top: 13px;
+      left: 423px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      width: 72px;
+      height: 97px;
+      top: -27px;
+      left: 66px;
     }
   }
 }
@@ -75,24 +99,50 @@
     width: 67px;
     height: 28px;
     position: absolute;
-    background: url("../../icons/stack.svg#slim-2") no-repeat 0 0;
+    background: url("../../icons/stack.svg#pro") no-repeat 0 0;
     top: 5px;
     left: -8px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      width: 270px;
+      height: 116px;
+      top: 67px;
+      left: 360px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      width: 136px;
+      height: 96px;
+      top: -20px;
+      left: 33px;
+    }
   }
 }
 
 .program__text {
   font-size: 14px;
   line-height: 18px;
-  margin: 0;
   color: #444444;
   padding-bottom: 18px;
-  margin-bottom: 17px;
+  margin: 0 0 17px;
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-bottom: 58px;
     font-size: 16px;
+    line-height: 24px;
     border-bottom: none;
+    max-width: 600px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 52px;
+    margin-bottom: 32px;
   }
 }
 
@@ -101,4 +151,34 @@
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 12px;
+    background: url("../../icons/stack.svg#arrow") no-repeat 0 0;
+    top: 6px;
+    left: 101px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+
+    &::before {
+      top: 9px;
+      left: 132px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 53px;
+
+    &::before {
+      top: 9px;
+      left: 183px;
+    }
+  }
 }

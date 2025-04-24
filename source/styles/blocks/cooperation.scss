@@ -2,6 +2,20 @@
   padding: 26px 20px 27px;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding: 58px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 43px 60px 81px;
+    position: absolute;
+    z-index: 10;
+    width: 440px;
+    top: 85px;
+    left: 110px;
+    background-color: #ffffff;
+  }
 }
 
 .cooperation__title {
@@ -11,10 +25,10 @@
   line-height: 20px;
   display: block;
   width: 50%;
-}
 
-.cooperation__adress {
-  font-size: 14px;
-  line-height: 20px;
-  width: 50%;
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    max-width: 220px;
+  }
 }

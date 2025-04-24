@@ -1,0 +1,29 @@
+.expenses {
+  font-family: $oswald;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    padding: 6px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.expenses__text {
+  @media (min-width: $desktop-width) {
+    padding-right: 66px;
+  }
+}
+
+.expenses__amount {
+  @media (min-width: $tablet-width) {
+    display: block;
+    text-align: right;
+  }
+}

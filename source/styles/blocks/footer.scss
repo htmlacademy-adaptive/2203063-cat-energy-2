@@ -1,6 +1,21 @@
-.footer-logo {
-  display: block;
-  text-align: center;
-  padding-top: 39px;
-  padding-bottom: 27px;
+.footer {
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
 }
+
+.footer__container {
+  padding: 39px 19px;
+  background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    padding: 52px 31px;
+    display: flex;
+    justify-content: space-between;
+
+    @media (min-width: $desktop-width) {
+      padding: 52px 109px;
+    }
+  }
+}
+

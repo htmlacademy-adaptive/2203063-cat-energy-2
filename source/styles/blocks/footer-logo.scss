@@ -1,0 +1,11 @@
+.footer-logo {
+  display: block;
+  text-align: center;
+  padding-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 0 0;
+  }
+
+
+}

@@ -1,15 +1,18 @@
 .header {
   padding-top: 64px;
   position: relative;
-  background: url("../../images/logo/logo-mobile-text.svg") no-repeat center 23px;
+  background: url("../../images/logo/logo-mobile-text.svg") no-repeat center 25px;
+  z-index: 20;
 
   @media (min-width: $tablet-width) {
-    padding-top: 25px;
+    padding: 25px 28px 0 31px;
     background: none;
-    padding-left: 30px;
-    padding-right: 14px;
     display: flex;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 55px 110px;
   }
 }
 
@@ -22,3 +25,4 @@
     position: static;
   }
 }
+

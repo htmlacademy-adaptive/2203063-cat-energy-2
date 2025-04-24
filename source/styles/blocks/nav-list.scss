@@ -9,6 +9,12 @@
     border-top: none;
     flex-wrap: wrap;
     justify-content: space-between;
+    max-width: 500px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 900px;
+    justify-content: flex-end;
   }
 }
 
@@ -29,8 +35,18 @@
       width: 64px;
       height: 2px;
       position: absolute;
-      top: 48px;
+      top: 46px;
       left: 6px;
+    }
+
+    @media (min-width: $desktop-width) {
+      &::before {
+        background-color: #ffffff;
+        width: 68px;
+        height: 2px;
+        top: 52px;
+        left: 37px;
+      }
     }
   }
 }
@@ -49,6 +65,14 @@
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
+    line-height: 24px;
     padding: 17px 6px;
+
+    @media (min-width: $desktop-width) {
+      font-size: 20px;
+      line-height: 30px;
+      color: #ffffff;
+      padding: 16px 0 20px 34px;
+    }
   }
 }
