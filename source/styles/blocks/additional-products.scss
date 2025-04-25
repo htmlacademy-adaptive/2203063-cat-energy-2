@@ -1,8 +1,21 @@
+.additional-products {
+  padding: 20px;
+}
+
 .additional-products__title {
   margin: 0;
+  font-family: $oswald;
+  font-weight: 400;
+  position: relative;
+  z-index: 1;
 }
 
 .additional-products__list {
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
+
+.additional-products__item {
+}
+

@@ -1,3 +1,11 @@
+.programs {
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    padding: 0;
+    width: 1220px;
+  }
+}
+
 .programs__list {
   padding: 0;
   margin: 0;

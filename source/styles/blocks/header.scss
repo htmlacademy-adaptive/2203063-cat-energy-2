@@ -1,5 +1,5 @@
 .header {
-  padding-top: 64px;
+  padding-top: 65px;
   position: relative;
   background: url("../../images/logo/logo-mobile-text.svg") no-repeat center 25px;
   z-index: 20;
@@ -12,7 +12,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 55px 110px;
+    padding: 55px 0 0px;
+    width: 1220px;
+    margin: 0 auto;
   }
 }
 
