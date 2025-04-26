@@ -5,14 +5,14 @@
   z-index: 20;
 
   @media (min-width: $tablet-width) {
-    padding: 25px 28px 0 31px;
+    padding: 24px 28px 0 31px;
     background: none;
     display: flex;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 55px 0 0px;
+    padding: 55px 0 0;
     width: 1220px;
     margin: 0 auto;
   }

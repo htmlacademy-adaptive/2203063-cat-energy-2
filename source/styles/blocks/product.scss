@@ -1,10 +1,49 @@
+.product {
+  @media (min-width: $tablet-width) {
+
+  }
+}
+
 .product__card {
   padding: 22px 20px;
   border-top: 1px solid #ebebeb;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    width: 324px;
+    border-top: none;
+    background-color: #f2f2f2;
+  }
 }
 
 .product__title {
-  margin: 0;
+  margin: 0 0 5px;
+  font-family: $oswald;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    margin: 0 0 22px;
+  }
+}
+
+.product__container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+  margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: end;
+
+    font-size: 16px;
+    margin: 0;
+    padding-top: 8px;
+  }
 }
 
 .product__quantity {
@@ -13,4 +52,23 @@
 
 .product__price {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 92px;
+    text-align: right;
+  }
 }
+
+.product__button {
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: $theme;
+  border: none;
+  width: 100%;
+  padding: 0;
+  font-family: "Oswald", "arial", sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+}
+

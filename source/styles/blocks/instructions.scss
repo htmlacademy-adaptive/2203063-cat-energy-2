@@ -2,6 +2,8 @@
   padding: 10px 20px 26px;
 
   @media (min-width: $tablet-width) {
+    width: 645px;
+    margin: 0 auto;
     padding: 14px 94px 7px 29px;
     border-bottom: 1px solid #e6e6e6;
   }
@@ -9,6 +11,7 @@
   @media (min-width: $desktop-width) {
     padding: 71px 69px 13px;
     border-bottom: none;
+    margin: 0;
   }
 }
 
@@ -42,6 +45,7 @@
 
   @media (min-width: $desktop-width) {
     justify-content: start;
+    flex-wrap: nowrap;
   }
 }
 
@@ -75,15 +79,15 @@
     }
 
     &::before {
-      content: "";
+      content: "1";
       position: absolute;
-      background-image: url("../../icons/one.svg");
-      background-repeat: no-repeat;
-      width: 136px;
-      height: 231px;
-      top: 34px;
-      left: 114px;
+      top: -2px;
+      right: 13px;
       z-index: -1;
+      font-family: $oswald;
+      font-size: 280px;
+      line-height: 280px;
+      color: #f2f2f2;
     }
   }
 
@@ -95,18 +99,20 @@
       top: 36px;
       left: 42px;
     }
-
-    &::before {
-      top: 35px;
-      left: 155px;
-    }
   }
 }
+
 
 .instructions__item--step-one {
   &::after {
     background-image: url("../../icons/leaf.svg");
     background-size: 25px 28px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      right: 32px;
+    }
   }
 }
 
@@ -118,7 +124,7 @@
 
   @media (min-width: $tablet-width) {
     &::before {
-      background-image: url("../../icons/two.svg");
+      content: "2";
     }
   }
 }
@@ -131,7 +137,7 @@
 
   @media (min-width: $tablet-width) {
     &::before {
-      background-image: url("../../icons/three.svg");
+      content: "3";
     }
   }
 }
@@ -144,10 +150,11 @@
 
   @media (min-width: $tablet-width) {
     &::before {
-      background-image: url("../../icons/four.svg");
+      content: "4";
     }
   }
 }
+
 
 .instructions__text {
   font-size: 14px;

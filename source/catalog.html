@@ -23,12 +23,12 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="nav__list nav-list">
-        <li class="nav-list__item nav-list__item--current">
+        <li class="nav-list__item">
           <a class="nav-list__link" href="index.html">
             Главная
           </a>
         </li>
-        <li class="nav-list__item">
+        <li class="nav-list__item nav-list__item--current">
           <a class="nav-list__link" href="catalog.html">
             Каталог продукции
           </a>
@@ -46,7 +46,7 @@
       <h1 class="catalog__title">Каталог продукции</h1>
       <ul class="catalog__list product">
         <li class="product__card product-card">
-          <a class="product-card__image" href="#">
+          <a class="product-card__img" href="#">
             <picture>
               <source media="(min-width: 1200px)" type="image/webp" srcset="./images/card-chicken-500-d@1x.webp 1x, ./images/card-chicken-500-d@2x.webp 2x" width="169" height="210">
               <source media="(min-width: 768px)" type="image/webp" srcset="./images/card-chicken-500-t@1x.webp 1x, ./images/card-chicken-500-t@2x.webp 2x" width="200" height="210">
@@ -62,15 +62,15 @@
             </a>
             <table class="product-card__options">
               <tbody>
-                <tr>
+                <tr class="product-card__parameters">
                   <td class="product-card__property">Масса</td>
                   <td class="product-card__value">500 г</td>
                 </tr>
-                <tr>
+                <tr class="product-card__parameters">
                   <td class="product-card__property">Вкус</td>
                   <td class="product-card__value">Курица</td>
                 </tr>
-                <tr>
+                <tr class="product-card__parameters">
                   <td class="product-card__property">Цена</td>
                   <td class="product-card__value">700 ₽</td>
                 </tr>
@@ -80,7 +80,7 @@
           <button class="product-card__button" type="button">Заказать</button>
         </li>
         <li class="product__card product-card">
-          <a class="product-card__image" href="#">
+          <a class="product-card__img" href="#">
             <picture>
               <source media="(min-width: 1200px)" type="image/webp" srcset="./images/card-chicken-1000-d@1x.webp 1x, ./images/card-chicken-1000-d@2x.webp 2x" width="169" height="210">
               <source media="(min-width: 768px)" type="image/webp" srcset="./images/card-chicken-1000-t@1x.webp 1x, ./images/card-chicken-1000-t@2x.webp 2x" width="200" height="210">
@@ -96,15 +96,15 @@
             </a>
             <table class="product-card__options">
               <tbody>
-                <tr>
+                <tr class="product-card__parameters">
                   <td class="product-card__property">Масса</td>
                   <td class="product-card__value">1000 г</td>
                 </tr>
-                <tr>
+                <tr class="product-card__parameters">
                   <td class="product-card__property">Вкус</td>
                   <td class="product-card__value">Курица</td>
                 </tr>
-                <tr>
+                <tr class="product-card__parameters">
                   <td class="product-card__property">Цена</td>
                   <td class="product-card__value">1000 ₽</td>
                 </tr>
@@ -114,7 +114,7 @@
           <button class="product-card__button" type="button">Заказать</button>
         </li>
         <li class="product__card product-card">
-          <a class="product-card__image" href="#">
+          <a class="product-card__img" href="#">
             <picture>
               <source media="(min-width: 1200px)" type="image/webp" srcset="./images/card-fish-500-d@1x.webp 1x, ./images/card-fish-500-d@2x.webp 2x" width="169" height="210">
               <source media="(min-width: 768px)" type="image/webp" srcset="./images/card-fish-500-t@1x.webp 1x, ./images/card-fish-500-t@2x.webp 2x" width="200" height="210">
@@ -130,15 +130,15 @@
             </a>
             <table class="product-card__options">
               <tbody>
-                <tr>
+                <tr class="product-card__parameters">
                   <td class="product-card__property">Масса</td>
                   <td class="product-card__value">500 г</td>
                 </tr>
-                <tr>
+                <tr class="product-card__parameters">
                   <td class="product-card__property">Вкус</td>
                   <td class="product-card__value">Рыба</td>
                 </tr>
-                <tr>
+                <tr class="product-card__parameters">
                   <td class="product-card__property">Цена</td>
                   <td class="product-card__value">700 ₽</td>
                 </tr>
@@ -148,7 +148,7 @@
           <button class="product-card__button" type="button">Заказать</button>
         </li>
         <li class="product__card product-card">
-          <a class="product-card__image" href="#">
+          <a class="product-card__img" href="#">
             <picture>
               <source media="(min-width: 1200px)" type="image/webp" srcset="./images/card-fish-1000-d@1x.webp 1x, ./images/card-fish-1000-d@2x.webp 2x" width="169" height="210">
               <source media="(min-width: 768px)" type="image/webp" srcset="./images/card-fish-1000-t@1x.webp 1x, ./images/card-fish-1000-t@2x.webp 2x" width="200" height="210">
@@ -164,15 +164,15 @@
             </a>
             <table class="product-card__options">
               <tbody>
-                <tr>
+                <tr class="product-card__parameters">
                   <td class="product-card__property">Масса</td>
                   <td class="product-card__value">1000 г</td>
                 </tr>
-                <tr>
+                <tr class="product-card__parameters">
                   <td class="product-card__property">Вкус</td>
                   <td class="product-card__value">Рыба</td>
                 </tr>
-                <tr>
+                <tr class="product-card__parameters">
                   <td class="product-card__property">Цена</td>
                   <td class="product-card__value">1000 ₽</td>
                 </tr>
@@ -182,7 +182,7 @@
           <button class="product-card__button" type="button">Заказать</button>
         </li>
         <li class="product__card product-card">
-          <a class="product-card__image" href="#">
+          <a class="product-card__img" href="#">
             <picture>
               <source media="(min-width: 1200px)" type="image/webp" srcset="./images/card-buckwheat-500-d@1x.webp 1x, ./images/card-buckwheat-500-d@2x.webp 2x" width="169" height="210">
               <source media="(min-width: 768px)" type="image/webp" srcset="./images/card-buckwheat-500-t@1x.webp 1x, ./images/card-buckwheat-500-t@2x.webp 2x" width="200" height="210">
@@ -198,15 +198,15 @@
             </a>
             <table class="product-card__options">
               <tbody>
-                <tr>
+                <tr class="product-card__parameters">
                   <td class="product-card__property">Масса</td>
                   <td class="product-card__value">500 г</td>
                 </tr>
-                <tr>
+                <tr class="product-card__parameters">
                   <td class="product-card__property">Вкус</td>
                   <td class="product-card__value">Гречка</td>
                 </tr>
-                <tr>
+                <tr class="product-card__parameters">
                   <td class="product-card__property">Цена</td>
                   <td class="product-card__value">400 ₽</td>
                 </tr>
@@ -216,7 +216,7 @@
           <button class="product-card__button" type="button">Заказать</button>
         </li>
         <li class="product__card product-card">
-          <a class="product-card__image" href="#">
+          <a class="product-card__img" href="#">
             <picture>
               <source media="(min-width: 1200px)" type="image/webp" srcset="./images/card-buckwheat-1000-d@1x.webp 1x, ./images/card-buckwheat-1000-d@2x.webp 2x" width="169" height="210">
               <source media="(min-width: 768px)" type="image/webp" srcset="./images/card-buckwheat-1000-t@1x.webp 1x, ./images/card-buckwheat-1000-t@2x.webp 2x" width="200" height="210">
@@ -232,15 +232,15 @@
             </a>
             <table class="product-card__options">
               <tbody>
-                <tr>
+                <tr class="product-card__parameters">
                   <td class="product-card__property">Масса</td>
                   <td class="product-card__value">1000 г</td>
                 </tr>
-                <tr>
+                <tr class="product-card__parameters">
                   <td class="product-card__property">Вкус</td>
                   <td class="product-card__value">Гречка</td>
                 </tr>
-                <tr>
+                <tr class="product-card__parameters">
                   <td class="product-card__property">Цена</td>
                   <td class="product-card__value">700 ₽</td>
                 </tr>
@@ -250,7 +250,7 @@
           <button class="product-card__button" type="button">Заказать</button>
         </li>
         <li class="product__card product-card">
-          <a class="product-card__image" href="#">
+          <a class="product-card__img" href="#">
             <picture>
               <source media="(min-width: 1200px)" type="image/webp" srcset="./images/card-rice-500-d@1x.webp 1x, ./images/card-rice-500-d@2x.webp 2x" width="169" height="210">
               <source media="(min-width: 768px)" type="image/webp" srcset="./images/card-rice-500-t@1x.webp 1x, ./images/card-rice-500-t@2x.webp 2x" width="200" height="210">
@@ -267,15 +267,15 @@
             </a>
             <table class="product-card__options">
               <tbody>
-                <tr>
+                <tr class="product-card__parameters">
                   <td class="product-card__property">Масса</td>
                   <td class="product-card__value">500 г</td>
                 </tr>
-                <tr>
+                <tr class="product-card__parameters">
                   <td class="product-card__property">Вкус</td>
                   <td class="product-card__value">Рис</td>
                 </tr>
-                <tr>
+                <tr class="product-card__parameters">
                   <td class="product-card__property">Цена</td>
                   <td class="product-card__value">500 ₽</td>
                 </tr>
@@ -327,9 +327,12 @@
           <button class="product__button" type="button">Заказать</button>
         </li>
       </ul>
-      <div class="product__promotion">Закажите все
-        и получите чехол для
-        кота в подарок!</div>
+      <div class="product__promotion promotion">
+        <p class="promotion__text">Закажите все
+          <br>
+          и получите чехол для кота в подарок!
+        </p>
+      </div>
     </section>
     <section class="subscribe">
       <h2 class="subscribe__title">Акции и новинки</h2>

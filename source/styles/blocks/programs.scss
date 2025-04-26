@@ -12,7 +12,15 @@
   list-style-type: none;
 
   @media (min-width: $desktop-width) {
+    padding: 69px 320px 58px 53px;
+    margin-top: 0;
+    margin-bottom: 31px;
     display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 40px;
+    padding: 68px 0 62px;
   }
 }
 
