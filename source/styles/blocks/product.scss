@@ -1,18 +1,25 @@
-.product {
+.product__card {
   @media (min-width: $tablet-width) {
+    position: relative;
+    box-sizing: border-box;
+    width: 324px;
+    border-top: none;
+  }
 
+  @media (min-width: $desktop-width) {
+    width: 245px;
   }
 }
 
-.product__card {
-  padding: 22px 20px;
-  border-top: 1px solid #ebebeb;
-
+.product__wrapper {
   @media (min-width: $tablet-width) {
-    padding: 0;
-    width: 324px;
-    border-top: none;
-    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }
 
@@ -25,7 +32,11 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    margin: 0 0 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 335px;
+    margin-bottom: 0;
   }
 }
 
@@ -70,5 +81,14 @@
   font-family: "Oswald", "arial", sans-serif;
   font-size: 16px;
   line-height: 40px;
+
+  &:focus,
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 

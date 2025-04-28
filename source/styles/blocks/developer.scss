@@ -11,9 +11,20 @@
   @media (min-width: $tablet-width) {
     margin-top: 5px;
   }
+
+  &:hover,
+  &:focus {
+    color: $theme;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .developer__text {
+  color: #444444;
+
   @media (min-width: $tablet-width) {
     margin-right: 23px;
   }

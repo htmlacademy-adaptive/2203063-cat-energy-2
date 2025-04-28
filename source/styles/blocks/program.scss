@@ -16,20 +16,33 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-top: 0;
+    padding: 69px 314px 60px 52px;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
     &::after {
       width: 200px;
       height: 200px;
-      top: 74px;
-      left: 447px;
+      top: 93px;
+      right: 65px;
+      left: unset;
     }
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 68px 52px 62px;
+
     &::after {
       width: 100px;
       height: 100px;
-      top: 130px;
-      left: 72px;
+      top: 47px;
+      right: unset;
+      left: 52px;
     }
   }
 }
@@ -48,10 +61,11 @@
 
   @media (min-width: $tablet-width) {
     &::before {
+      top: 82px;
+      left: unset;
       width: 140px;
       height: 194px;
-      top: 63px;
-      left: 476px;
+      right: 95px;
     }
   }
 
@@ -59,8 +73,9 @@
     &::before {
       width: 72px;
       height: 97px;
-      top: 104px;
-      left: -4px;
+      top: 41px;
+      right: unset;
+      left: 66px;
     }
   }
 }
@@ -79,10 +94,11 @@
 
   @media (min-width: $tablet-width) {
     &::before {
+      top: 135px;
+      left: unset;
       width: 270px;
       height: 116px;
-      top: 258px;
-      left: 413px;
+      right: 27px;
     }
   }
 
@@ -90,8 +106,9 @@
     &::before {
       width: 136px;
       height: 96px;
-      top: 131px;
-      left: 53px;
+      top: 48px;
+      right: unset;
+      left: 33px;
     }
   }
 }
@@ -114,7 +131,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 214px;
+    padding-left: 162px;
     margin: 0 0 65px;
   }
 }
@@ -137,8 +154,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 52px;
+    max-width: 466px;
     margin-bottom: 32px;
+    padding: 0;
   }
 }
 
@@ -152,7 +170,7 @@
   &::before {
     content: "";
     position: absolute;
-    width: 24px;
+    width: 25px;
     height: 12px;
     background: url("../../icons/stack.svg#arrow") no-repeat 0 0;
     top: 6px;
@@ -170,11 +188,24 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 53px;
+    padding-left: 1px;
 
     &::before {
       top: 9px;
-      left: 183px;
+      left: 131px;
     }
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    &::before {
+      background: url("../../icons/stack.svg#arrow-long") no-repeat 0 0;
+      width: 34px;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

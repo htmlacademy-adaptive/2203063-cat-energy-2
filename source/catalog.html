@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <title>Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-idon" href="favicons/180.png"><!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
@@ -13,8 +17,8 @@
   <header class="header">
     <a class="header__logo logo" href="index.html">
       <picture>
-        <source media="(min-width: 1200px)" srcset="./images/logo/logo-desktop.svg" width="200" height="59">
-        <source media="(min-width: 768px)" srcset="./images/logo/logo-tablet.svg" width="174" height="50">
+        <source media="(min-width: 1200px)" type="image/svg+xml" srcset="./images/logo/logo-desktop.svg" width="200" height="59">
+        <source media="(min-width: 768px)" type="image/svg+xml" srcset="./images/logo/logo-tablet.svg" width="174" height="50">
         <img class="logo__image" src="./images/logo/logo-mobile.svg" width="33" height="38" alt="Логотип">
       </picture>
     </a>
@@ -41,7 +45,7 @@
       </ul>
     </nav>
   </header>
-  <main class="main main__container">
+  <main class="main-block">
     <section class="catalog">
       <h1 class="catalog__title">Каталог продукции</h1>
       <ul class="catalog__list product">
@@ -53,10 +57,10 @@
               <source type="image/webp" srcset="./images/card-chicken-500-m@1x.webp 1x, ./images/card-chicken-500-m@2x.webp 2x" width="140" height="107">
               <source media="(min-width: 1200px)" type="image/png" srcset="./images/card-chicken-500-d@1x.png 1x, ./images/card-chicken-500-d@2x.png 2x" width="169" height="210">
               <source media="(min-width: 768px)" type="image/png" srcset="./images/card-chicken-500-t@1x.png 1x, ./images/card-chicken-500-t@2x.png 2x" width="200" height="210">
-              <img src="./images/card-chicken-500-m@1x.png" srcset="./images/card-chicken-500-m@2x.png 2x" width="140" height="107" alt="Банка корма Cat Energy объемом 500 г со вкусом курицы">
+              <img class="product-card__image" src="./images/card-chicken-500-m@1x.png" srcset="./images/card-chicken-500-m@2x.png 2x" width="140" height="107" alt="Банка корма Cat Energy объемом 500 г со вкусом курицы">
             </picture>
           </a>
-          <div class="product-cart__description">
+          <div class="product-card__description">
             <a class="product-card__link" href="#">
               <h3 class="product-card__title">Cat Energy PRO 500 г</h3>
             </a>
@@ -90,7 +94,7 @@
               <img class="product-card__image" src="./images/card-chicken-1000-m@1x.png" srcset="./images/card-chicken-1000-m@2x.png 2x" width="140" height="107" alt="Банка корма Cat Energy объемом 1000 г со вкусом курицы">
             </picture>
           </a>
-          <div class="product-cart__description">
+          <div class="product-card__description">
             <a class="product-card__link" href="#">
               <h3 class="product-card__title">Cat Energy PRO 1000 г</h3>
             </a>
@@ -124,7 +128,7 @@
               <img class="product-card__image" src="./images/card-fish-500-m@1x.png" srcset="./images/card-fish-500-m@2x.png 2x" width="140" height="107" alt="Банка корма Cat Energy объемом 500 г со вкусом рыбы">
             </picture>
           </a>
-          <div class="product-cart__description">
+          <div class="product-card__description">
             <a class="product-card__link" href="#">
               <h3 class="product-card__title">Cat Energy PRO 500 г</h3>
             </a>
@@ -158,7 +162,7 @@
               <img class="product-card__image" src="./images/card-fish-1000-m@1x.png" srcset="./images/card-fish-1000-m@2x.png 2x" width="140" height="107" alt="Банка питания Cat Energy объемом 1000 г со вкусом рыбы">
             </picture>
           </a>
-          <div class="product-cart__description">
+          <div class="product-card__description">
             <a class="product-card__link" href="#">
               <h3 class="product-card__title">Cat Energy PRO 1000 г</h3>
             </a>
@@ -192,7 +196,7 @@
               <img class="product-card__image" src="./images/card-buckwheat-500-m@1x.png" srcset="./images/card-buckwheat-500-m@2x.png 2x" width="140" height="107" alt="Банка питания Cat Energy объемом 500 г со вкусом гречки">
             </picture>
           </a>
-          <div class="product-cart__description">
+          <div class="product-card__description">
             <a class="product-card__link" href="#">
               <h3 class="product-card__title">Cat Energy SLIM 500 г</h3>
             </a>
@@ -226,7 +230,7 @@
               <img class="product-card__image" src="./images/card-buckwheat-1000-m@1x.png" srcset="./images/card-buckwheat-1000-m@2x.png 2x" width="140" height="107" alt="Банка питания Cat Energy объемом 1000 г со вкусом гречки">
             </picture>
           </a>
-          <div class="product-cart__description">
+          <div class="product-card__description">
             <a class="product-card__link" href="#">
               <h3 class="product-card__title">Cat Energy SLIM 1000 г</h3>
             </a>
@@ -259,9 +263,8 @@
               <source media="(min-width: 768px)" type="image/png" srcset="./images/card-rice-500-t@1x.png 1x, ./images/card-rice-500-t@2x.png 2x" width="200" height="210">
               <img class="product-card__image" src="./images/card-rice-500-m@1x.png" srcset="./images/card-rice-500-m@2x.png 2x" width="140" height="107" alt="Банка питания Cat Energy объемом 500 г со вкусом риса">
             </picture>
-            </picture>
           </a>
-          <div class="product-cart__description">
+          <div class="product-card__description">
             <a class="product-card__link" href="#">
               <h3 class="product-card__title">Cat Energy SLIM 500 г</h3>
             </a>
@@ -285,53 +288,65 @@
           <button class="product-card__button" type="button">Заказать</button>
         </li>
         <li class="product__card product-card product-card--add">
-          <h3 class="product-card__title product-card__base">Показать еще 100500 товаров</h3>
-          <p class="product-card__text">На самом деле вкусов гораздо больше!</p>
+          <div class="product-card__container">
+            <h3 class="product-card__title product-card__title--base">Показать еще 100500 товаров</h3>
+            <p class="product-card__text">На самом деле вкусов гораздо больше!</p>
+          </div>
           <button class="product-card__button product-card__button--accent" type="button">Показать все</button>
         </li>
       </ul>
     </section>
     <section class="additional-products">
       <h2 class="additional-products__title">Дополнительные товары</h2>
-      <ul class="additional-products__list">
-        <li class="additional-products__item product">
-          <h3 class="product__title">Сахарозаменитель</h3>
-          <div class="product__container">
-            <p class="product__quantity">1 упаковка (100 г)</p>
-            <p class="product__price">200 ₽</p>
-          </div>
-          <button class="product__button" type="button">Заказать</button>
-        </li>
-        <li class="additional-products__item product">
-          <h3 class="product__title">Питьевая вода</h3>
-          <div class="product__container">
-            <p class="product__quantity">5 литров</p>
-            <p class="product__price">50 ₽</p>
-          </div>
-          <button class="product__button" type="button">Заказать</button>
-        </li>
-        <li class="additional-products__item product">
-          <h3 class="product__title">Молоко</h3>
-          <div class="product__container">
-            <p class="product__quantity">1 литр</p>
-            <p class="product__price">100 ₽</p>
-          </div>
-          <button class="product__button" type="button">Заказать</button>
-        </li>
-        <li class="additional-products__item product">
-          <h3 class="product__title">Витамины</h3>
-          <div class="product__container">
-            <p class="product__quantity">1 упаковка (30 г)</p>
-            <p class="product__price">300 ₽</p>
-          </div>
-          <button class="product__button" type="button">Заказать</button>
-        </li>
-      </ul>
-      <div class="product__promotion promotion">
-        <p class="promotion__text">Закажите все
-          <br>
-          и получите чехол для кота в подарок!
-        </p>
+      <div class="additional-products__block">
+        <ul class="additional-products__list">
+          <li class="additional-products__item product">
+            <div class="product__wrapper">
+              <h3 class="product__title">Сахарозаменитель</h3>
+              <div class="product__container">
+                <p class="product__quantity">1 упаковка (100 г)</p>
+                <p class="product__price">200 ₽</p>
+              </div>
+            </div>
+            <button class="product__button" type="button">Заказать</button>
+          </li>
+          <li class="additional-products__item product">
+            <div class="product__wrapper">
+              <h3 class="product__title">Питьевая вода</h3>
+              <div class="product__container">
+                <p class="product__quantity">5 литров</p>
+                <p class="product__price">50 ₽</p>
+              </div>
+            </div>
+            <button class="product__button" type="button">Заказать</button>
+          </li>
+          <li class="additional-products__item product">
+            <div class="product__wrapper">
+              <h3 class="product__title">Молоко</h3>
+              <div class="product__container">
+                <p class="product__quantity">1 литр</p>
+                <p class="product__price">100 ₽</p>
+              </div>
+            </div>
+            <button class="product__button" type="button">Заказать</button>
+          </li>
+          <li class="additional-products__item product">
+            <div class="product__wrapper">
+              <h3 class="product__title">Витамины</h3>
+              <div class="product__container">
+                <p class="product__quantity">1 упаковка (30 г)</p>
+                <p class="product__price">300 ₽</p>
+              </div>
+            </div>
+            <button class="product__button" type="button">Заказать</button>
+          </li>
+        </ul>
+        <div class="additional-products__promotion promotion">
+          <p class="promotion__text">Закажите все
+            <br>
+            и получите чехол для кота в подарок!
+          </p>
+        </div>
       </div>
     </section>
     <section class="subscribe">
@@ -362,43 +377,45 @@
         </div>
       </div>
     </section>
-    <div class="footer__container">
-      <a class="footer__logo footer-logo" href="index.html">
-        <img class="footer-logo__link" src="./images/logo/logo-mobile-text.svg" width="128" height="24" alt="Логотип Cat Energy">
-      </a>
-      <h2 class="visually-hidden">Социальные сети</h2>
-      <ul class="footer__social social">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="#">
-            <span class="visually-hidden">ВКонтакте</span>
-            <svg width="27" height="17" viewBox="0 0 27 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use href="./icons/stack.svg#vk"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="#">
-            <span class="visually-hidden">Ютюб</span>
-            <svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use href="./icons/stack.svg#youtube"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--telegram" href="#">
-            <span class="visually-hidden">Телеграм</span>
-            <svg width="20" height="17" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use href="./icons/stack.svg#tg"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-      <a class="footer__developer developer" href="#">
-        <span class="developer__text">HTML Academy</span>
-        <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <use href="./icons/stack.svg#html-academy"></use>
-        </svg>
-      </a>
+    <div class="footer__wrapper">
+      <div class="footer__container">
+        <a class="footer__logo footer-logo" href="index.html">
+          <img class="footer-logo__link" src="./images/logo/logo-mobile-text.svg" width="128" height="24" alt="Логотип Cat Energy">
+        </a>
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul class="footer__social social">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="#">
+              <span class="visually-hidden">ВКонтакте</span>
+              <svg width="27" height="17" viewBox="0 0 27 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="./icons/stack.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#">
+              <span class="visually-hidden">Ютюб</span>
+              <svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="./icons/stack.svg#youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="#">
+              <span class="visually-hidden">Телеграм</span>
+              <svg width="20" height="17" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="./icons/stack.svg#tg"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <a class="footer__developer developer" href="#">
+          <span class="developer__text">HTML Academy</span>
+          <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use href="./icons/stack.svg#html-academy"></use>
+          </svg>
+        </a>
+      </div>
     </div>
   </footer>
 </body>

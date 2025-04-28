@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <title>Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-idon" href="favicons/180.png"><!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
@@ -13,8 +17,8 @@
   <header class="header">
     <a class="header__logo logo" href="#">
       <picture>
-        <source media="(min-width: 1200px)" srcset="./images/logo/logo-desktop.svg" width="200" height="59">
-        <source media="(min-width: 768px)" srcset="./images/logo/logo-tablet.svg" width="174" height="50">
+        <source media="(min-width: 1200px)" type="image/svg+xml" srcset="./images/logo/logo-desktop.svg" width="200" height="59">
+        <source media="(min-width: 768px)" type="image/svg+xml" srcset="./images/logo/logo-tablet.svg" width="174" height="50">
         <img class="logo__image" src="./images/logo/logo-mobile.svg" width="33" height="38" alt="Логотип">
       </picture>
     </a>
@@ -24,17 +28,17 @@
       </button>
       <ul class="nav__list nav-list">
         <li class="nav-list__item nav-list__item--current">
-          <a class="nav-list__link" href="index.html">
+          <a class="nav-list__link nav-list__link--index" href="index.html">
             Главная
           </a>
         </li>
         <li class="nav-list__item">
-          <a class="nav-list__link" href="catalog.html">
+          <a class="nav-list__link nav-list__link--index" href="catalog.html">
             Каталог продукции
           </a>
         </li>
         <li class="nav-list__item">
-          <a class="nav-list__link" href="#">
+          <a class="nav-list__link nav-list__link--index" href="#">
             Подбор программы
           </a>
         </li>
@@ -107,28 +111,34 @@
     </section>
 
     <section class="example">
-      <h2 class="example__header">Живой пример</h2>
-      <p class="example__text">
-        Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
-        изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-      </p>
-      <div class="example__container">
-        <ul class="example__list">
-          <li class="example__item result-card">
-            <p class="result-card__numbers">5 кг</p>
-            <p class="result-card__text">снижение веса</p>
-          </li>
-          <li class="example__item result-card">
-            <p class="result-card__numbers">60 дней</p>
-            <p class="result-card__text">затрачено времени</p>
-          </li>
-        </ul>
-        <div class="example__total expenses">
-          <span class="expenses__text">затраты на питание:</span>
-          <span class="expenses__amount">15 000 руб.</span>
+      <h2 class="example__header">
+        <span>Живой пример</span>
+      </h2>
+      <div class="example__block">
+        <div>
+          <p class="example__text">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
+            изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+          </p>
+          <div class="example__container">
+            <ul class="example__list">
+              <li class="example__item result-card">
+                <p class="result-card__numbers">5 кг</p>
+                <p class="result-card__text">снижение веса</p>
+              </li>
+              <li class="example__item result-card">
+                <p class="result-card__numbers">60 дней</p>
+                <p class="result-card__text">затрачено времени</p>
+              </li>
+            </ul>
+            <div class="example__total expenses">
+              <span class="expenses__text">затраты на питание:</span>
+              <span class="expenses__amount">15 000 руб.</span>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="example__slider">
+        <div class="example__slider">
+        </div>
       </div>
     </section>
   </main>
@@ -149,43 +159,45 @@
         </div>
       </div>
     </section>
-    <div class="footer__container">
-      <a class="footer__logo footer-logo" href="index.html">
-        <img class="footer-logo__link" src="./images/logo/logo-mobile-text.svg" width="128" height="24" alt="Логотип Cat Energy">
-      </a>
-      <h2 class="visually-hidden">Социальные сети</h2>
-      <ul class="footer__social social">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="#">
-            <span class="visually-hidden">ВКонтакте</span>
-            <svg width="27" height="17" viewBox="0 0 27 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use href="./icons/stack.svg#vk"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="#">
-            <span class="visually-hidden">Ютюб</span>
-            <svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use href="./icons/stack.svg#youtube"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--telegram" href="#">
-            <span class="visually-hidden">Телеграм</span>
-            <svg width="20" height="17" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use href="./icons/stack.svg#tg"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-      <a class="footer__developer developer" href="#">
-        <span class="developer__text">HTML Academy</span>
-        <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <use href="./icons/stack.svg#html-academy"></use>
-        </svg>
-      </a>
+    <div class="footer__wrapper">
+      <div class="footer__container">
+        <a class="footer__logo footer-logo" href="index.html">
+          <img class="footer-logo__link" src="./images/logo/logo-mobile-text.svg" width="128" height="24" alt="Логотип Cat Energy">
+        </a>
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul class="footer__social social">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="#">
+              <span class="visually-hidden">ВКонтакте</span>
+              <svg width="27" height="17" viewBox="0 0 27 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="./icons/stack.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#">
+              <span class="visually-hidden">Ютюб</span>
+              <svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="./icons/stack.svg#youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="#">
+              <span class="visually-hidden">Телеграм</span>
+              <svg width="20" height="17" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="./icons/stack.svg#tg"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <a class="footer__developer developer" href="#">
+          <span class="developer__text">HTML Academy</span>
+          <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use href="./icons/stack.svg#html-academy"></use>
+          </svg>
+        </a>
+      </div>
     </div>
   </footer>
 </body>

@@ -4,14 +4,15 @@
   @media (min-width: $tablet-width) {
     width: 645px;
     margin: 0 auto;
-    padding: 14px 94px 7px 29px;
+    padding: 44px 94px 7px 30px;
     border-bottom: 1px solid #e6e6e6;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 71px 69px 13px;
     border-bottom: none;
-    margin: 0;
+    margin: 0 auto;
+    padding: 0;
+    width: 1220px;
   }
 }
 
@@ -28,7 +29,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 41px;
+    padding-left: 0;
   }
 }
 
@@ -41,11 +42,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    counter-reset: item;
   }
 
   @media (min-width: $desktop-width) {
     justify-content: start;
-    flex-wrap: nowrap;
+    gap: 80px;
   }
 }
 
@@ -70,6 +72,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 147px 0 97px;
+    counter-increment: item;
 
     &::after {
       width: 80px;
@@ -79,10 +82,10 @@
     }
 
     &::before {
-      content: "1";
+      content: counter(item);
       position: absolute;
       top: -2px;
-      right: 13px;
+      right: 14px;
       z-index: -1;
       font-family: $oswald;
       font-size: 280px;
@@ -93,11 +96,15 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
-    padding: 146px 40px 99px;
+    padding: 146px 0 99px;
 
     &::after {
       top: 36px;
-      left: 42px;
+      left: 0;
+    }
+
+    &::before {
+      right: -2px;
     }
   }
 }
@@ -111,7 +118,13 @@
 
   @media (min-width: $tablet-width) {
     &::before {
-      right: 32px;
+      right: 33px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      right: 20px;
     }
   }
 }
@@ -121,24 +134,12 @@
     background-image: url("../../icons/water.svg");
     background-size: 26px 29px;
   }
-
-  @media (min-width: $tablet-width) {
-    &::before {
-      content: "2";
-    }
-  }
 }
 
 .instructions__item--step-three {
   &::after {
     background-image: url("../../icons/cutlery.svg");
     background-size: 25px 30px;
-  }
-
-  @media (min-width: $tablet-width) {
-    &::before {
-      content: "3";
-    }
   }
 }
 
@@ -147,14 +148,7 @@
     background-image: url("../../icons/watch.svg");
     background-size: 26px 31px;
   }
-
-  @media (min-width: $tablet-width) {
-    &::before {
-      content: "4";
-    }
-  }
 }
-
 
 .instructions__text {
   font-size: 14px;
