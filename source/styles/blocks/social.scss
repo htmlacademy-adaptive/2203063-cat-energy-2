@@ -35,18 +35,18 @@
     justify-content: center;
     align-items: center;
     width: 50px;
+  }
 
-    @media (min-width: $desktop-width) {
-      padding: 6px 0 0;
-    }
+  @media (min-width: $desktop-width) {
+    padding: 6px 0 0;
+  }
 
-    &:hover,
-    &:focus {
-      color: $theme;
-    }
+  &:hover,
+  &:focus {
+    color: $theme;
+  }
 
-    &:active {
-      color: rgba($theme, 0.3);
-    }
+  &:active {
+    color: rgba($theme, 0.3);
   }
 }

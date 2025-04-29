@@ -18,12 +18,11 @@
     padding: 54px 31px;
     display: flex;
     justify-content: space-between;
+  }
 
-    @media (min-width: $desktop-width) {
-      width: 1220px;
-      margin: 0 auto;
-      padding: 62px 31px 70px;
-    }
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 62px 31px 70px;
   }
 }
-

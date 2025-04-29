@@ -42,11 +42,21 @@
 }
 
 .example__block {
+  @media (min-width: $tablet-width) {
+    & div {
+      padding-bottom: 36px;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     width: 1220px;
     margin: 0 auto;
     justify-content: space-between;
+
+    & div {
+      padding-bottom: 0;
+    }
   }
 }
 
@@ -65,8 +75,7 @@
 
   @media (min-width: $desktop-width) {
     width: 432px;
-    padding-bottom: 69px;
-    padding-top: 70px;
+    padding: 70px 0 69px;
   }
 }
 
@@ -74,12 +83,12 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    padding: 0 30px 230px;
+    padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
     display: block;
-    padding-bottom: 0;
+    padding: 0;
   }
 }
 
@@ -108,11 +117,27 @@
 .example__slider {
   @media (min-width: $tablet-width) {
     background: #eaeaea;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 150px;
+      background-color: #ffffff;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
   }
 
   @media (min-width: $desktop-width) {
     position: static;
     margin-top: -132px;
     background: #f2f2f2;
+
+    &::before {
+      display: none;
+    }
   }
 }
