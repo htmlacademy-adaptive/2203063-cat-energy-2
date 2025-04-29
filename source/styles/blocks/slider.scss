@@ -90,14 +90,15 @@
   position: absolute;
   width: 40px;
   height: 40px;
-  background: url("../icons/stack.svg#pointers") no-repeat;
   border-radius: 50%;
-  border: 2px solid #666666;
+  border: 2px solid transparent;
   left: 50%;
   transform: translate(-50%, -50%);
   top: 50%;
   z-index: 20;
   transition: left 1s ease;
+  cursor: pointer;
+  color: #666666;
 
   &::before {
     content: "";
@@ -116,11 +117,11 @@
     width: 36px;
     height: 36px;
     position: absolute;
-    left: 0;
-    top: 0;
+    top: -2px;
+    left: -2px;
     background: #ffffff;
     border-radius: 50%;
-    cursor: pointer;
+    border: 2px solid #666666;
   }
 
   @media (min-width: $tablet-width) {
@@ -141,6 +142,21 @@
   &:active {
     color: rgba($theme, 0.3);
   }
+}
+
+.slider__toggle svg {
+  position: relative;
+  z-index: 20;
+}
+
+.slider__toggle:hover::after,
+.slider__toggle:focus::after {
+  border-color: $theme;
+}
+
+.slider__toggle:hover::before,
+.slider__toggle:focus::before {
+  background-color: $theme;
 }
 
 .slider--before .slider__toggle {
