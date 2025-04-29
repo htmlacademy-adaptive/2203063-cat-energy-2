@@ -1,5 +1,38 @@
 .header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+  padding-top: 65px;
+  position: relative;
+  background: url("../../images/logo/logo-mobile-text.svg") no-repeat center 25px;
+  z-index: 20;
+
+  @media (min-width: $tablet-width) {
+    padding: 24px 28px 0 31px;
+    background: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 54px 0 0;
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
+
+.header__logo {
+  position: absolute;
+  top: 13px;
+  left: 22px;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }

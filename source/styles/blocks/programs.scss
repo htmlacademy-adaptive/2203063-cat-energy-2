@@ -1,0 +1,33 @@
+.programs {
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    padding: 0;
+    width: 1220px;
+  }
+}
+
+.programs__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
+    padding: 83px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.programs__wrapper {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}

@@ -1,0 +1,38 @@
+.result-card__numbers {
+  font-family: $oswald;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  width: 85px;
+  padding: 9px 18px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    width: 162px;
+    padding: 10px 0 15px;
+  }
+}
+
+.result-card__text {
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+  width: 81px;
+  margin: -10px 21px 0;
+  color: #444444;
+  background: #eaeaea;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    background-color: #ffffff;
+    width: 130px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #f2f2f2;
+  }
+}

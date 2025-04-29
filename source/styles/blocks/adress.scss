@@ -1,0 +1,33 @@
+.adress {
+  font-size: 14px;
+  line-height: 20px;
+  width: 50%;
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    max-width: 190px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.adress__street {
+  margin: 0;
+}
+
+.adress__city {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 18px 0 0;
+  }
+}

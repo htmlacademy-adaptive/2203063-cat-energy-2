@@ -1,0 +1,105 @@
+.product__card {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    box-sizing: border-box;
+    width: 324px;
+    border-top: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
+}
+
+.product__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.product__title {
+  margin: 0 0 5px;
+  font-family: $oswald;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 327px;
+    align-content: center;
+  }
+}
+
+.product__container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+  margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: end;
+
+    font-size: 16px;
+    margin: 0;
+    padding-top: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 242px 82px;
+    padding-top: 12px;
+  }
+}
+
+.product__quantity {
+  margin: 0;
+}
+
+.product__price {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 92px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    width: auto;
+  }
+}
+
+.product__button {
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: $theme;
+  border: none;
+  width: 100%;
+  padding: 0;
+  font-family: "Oswald", "arial", sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+
+  &:focus,
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}

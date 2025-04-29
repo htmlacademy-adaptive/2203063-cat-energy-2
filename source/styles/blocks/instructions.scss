@@ -1,0 +1,163 @@
+.instructions {
+  padding: 10px 20px 26px;
+
+  @media (min-width: $tablet-width) {
+    width: 645px;
+    margin: 0 auto;
+    padding: 44px 94px 7px 30px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 1220px;
+  }
+}
+
+.instructions__header {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: #000000;
+  margin: 0 0 36px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
+}
+
+
+.instructions__list {
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    counter-reset: item;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: start;
+    gap: 80px;
+  }
+}
+
+.instructions__item {
+  list-style-type: none;
+  padding-bottom: 20px;
+  padding-left: 80px;
+  position: relative;
+  min-height: 60px;
+
+  &::after {
+    content: "";
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    background-color: $theme;
+    top: -3px;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 147px 0 97px;
+    counter-increment: item;
+
+    &::after {
+      width: 80px;
+      height: 80px;
+      top: 37px;
+      left: 0;
+    }
+
+    &::before {
+      content: counter(item);
+      position: absolute;
+      top: -2px;
+      right: 14px;
+      z-index: -1;
+      font-family: $oswald;
+      font-size: 280px;
+      line-height: 280px;
+      color: #f2f2f2;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    padding: 146px 0 99px;
+
+    &::after {
+      top: 36px;
+      left: 0;
+    }
+
+    &::before {
+      right: -2px;
+    }
+  }
+}
+
+
+.instructions__item--step-one {
+  &::after {
+    background-image: url("../../icons/leaf.svg");
+    background-size: 25px 28px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      right: 33px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      right: 20px;
+    }
+  }
+}
+
+.instructions__item--step-two {
+  &::after {
+    background-image: url("../../icons/water.svg");
+    background-size: 26px 29px;
+  }
+}
+
+.instructions__item--step-three {
+  &::after {
+    background-image: url("../../icons/cutlery.svg");
+    background-size: 25px 30px;
+  }
+}
+
+.instructions__item--step-four {
+  &::after {
+    background-image: url("../../icons/watch.svg");
+    background-size: 26px 31px;
+  }
+}
+
+.instructions__text {
+  font-size: 14px;
+  margin: 0;
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    width: 260px;
+  }
+}

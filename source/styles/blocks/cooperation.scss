@@ -1,0 +1,53 @@
+.cooperation {
+  @media (min-width: $desktop-width) {
+    position: relative;
+    padding: 99px 0 107px;
+  }
+}
+
+.cooperation__container {
+  padding: 26px 20px 27px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    padding: 58px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 43px 60px 81px;
+    position: relative;
+    z-index: 10;
+    width: 440px;
+    left: 50%;
+    margin-left: -610px;
+    background-color: #ffffff;
+  }
+}
+
+.cooperation__title {
+  font-family: $oswald;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 20px;
+  display: block;
+  width: 50%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    max-width: 220px;
+  }
+}
+
+.cooperation__map {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+}

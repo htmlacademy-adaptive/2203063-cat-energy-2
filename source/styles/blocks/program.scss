@@ -1,0 +1,211 @@
+.program {
+  margin-top: 20px;
+  padding: 20px;
+  background: $background-color;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: $theme;
+    border-radius: 50%;
+    top: 23px;
+    left: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    padding: 69px 314px 60px 52px;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::after {
+      width: 200px;
+      height: 200px;
+      top: 93px;
+      right: 65px;
+      left: unset;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 68px 52px 62px;
+
+    &::after {
+      width: 100px;
+      height: 100px;
+      top: 47px;
+      right: unset;
+      left: 52px;
+    }
+  }
+}
+
+.program--slim {
+  &::before {
+    content: "";
+    width: 36px;
+    height: 50px;
+    position: absolute;
+    background: url("../../icons/stack.svg#slim") no-repeat 0 0;
+    top: 19px;
+    left: 28px;
+    z-index: 1;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      top: 82px;
+      left: unset;
+      width: 140px;
+      height: 194px;
+      right: 95px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      width: 72px;
+      height: 97px;
+      top: 41px;
+      right: unset;
+      left: 66px;
+    }
+  }
+}
+
+.program--pro {
+  &::before {
+    content: "";
+    width: 67px;
+    height: 28px;
+    position: absolute;
+    background: url("../../icons/stack.svg#pro") no-repeat 0 0;
+    top: 34px;
+    left: 14px;
+    z-index: 1;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      top: 135px;
+      left: unset;
+      width: 270px;
+      height: 116px;
+      right: 27px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      width: 136px;
+      height: 96px;
+      top: 48px;
+      right: unset;
+      left: 33px;
+    }
+  }
+}
+
+.program__header {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 9px;
+  margin-bottom: 32px;
+  padding-left: 70px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    padding: 0;
+    margin: 0 0 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 162px;
+    margin: 0 0 65px;
+  }
+}
+
+.program__text {
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  padding-bottom: 18px;
+  margin: 0 0 17px;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-bottom: 58px;
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: none;
+    max-width: 600px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 466px;
+    margin-bottom: 32px;
+    padding: 0;
+  }
+}
+
+.program__link {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 12px;
+    background: url("../../icons/stack.svg#arrow") no-repeat 0 0;
+    top: 6px;
+    left: 101px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+
+    &::before {
+      top: 9px;
+      left: 132px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 1px;
+
+    &::before {
+      top: 9px;
+      left: 131px;
+    }
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    &::before {
+      background: url("../../icons/stack.svg#arrow-long") no-repeat 0 0;
+      width: 34px;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
