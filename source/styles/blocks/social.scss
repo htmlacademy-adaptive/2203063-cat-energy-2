@@ -11,7 +11,7 @@
   justify-content: center;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    padding: 0 0 0 39px;
     margin: 0;
     border: none;
     display: flex;
@@ -29,20 +29,24 @@
   padding: 0 10px;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    padding: 2px 0 0;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50px;
-  }
 
-  &:hover,
-  &:focus {
-    color: $theme;
-  }
+    @media (min-width: $desktop-width) {
+      padding: 6px 0 0;
+    }
 
-  &:active {
-    color: rgba($theme, 0.3);
+    &:hover,
+    &:focus {
+      color: $theme;
+    }
+
+    &:active {
+      color: rgba($theme, 0.3);
+    }
   }
 }

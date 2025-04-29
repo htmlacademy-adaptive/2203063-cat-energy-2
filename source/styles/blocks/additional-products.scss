@@ -1,72 +1,34 @@
 .additional-products {
-  padding: 22px 20px;
+  padding: 22px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 20px 29px;
+    padding: 20px 0;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 13px;
-    padding: 0;
-    width: 1220px;
-    margin: 0 auto;
+    padding: 0 0 94px;
+    margin: 0;
   }
 }
 
 .additional-products__title {
   margin: 0;
-  font-family: $oswald;
-  font-weight: 400;
-  position: relative;
-  z-index: 1;
-  display: inline;
-  background: #ffffff;
-  box-shadow: -41px 0 #ffffff, 41px 0 #ffffff;
-  width: fit-content;
-
-  &::before {
-    content: "";
-    z-index: -1;
-    background: #68b738;
-    width: 100vw;
-    height: 2px;
-    position: absolute;
-    top: 16px;
-    box-shadow: 100vw 0 #68b738;
-  }
-
-  @media (min-width: $tablet-width) {
-    right: 0;
-    font-size: 32px;
-    padding: 0 41px;
-    box-shadow: -1px 0 #ffffff, 1px 0 #ffffff;
-
-    &::before {
-      top: 23px;
-      right: 0;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    box-shadow: -40px 0 #ffffff, 41px 0 #ffffff;
-    font-size: 40px;
-    padding: 0;
-    margin-bottom: 68px;
-
-    &::before {
-      top: 28px;
-    }
-  }
 }
 
 .additional-products__block {
+  margin: 0 20px;
+
   @media (min-width: $tablet-width) {
-    padding-top: 71px;
+    padding-top: 80px;
+    margin: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    width: 1220px;
+    margin: 0 auto;
   }
 }
 
@@ -81,6 +43,11 @@
     border: 1px solid #cdcdcd;
     margin: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 895px;
+    border: none;
+  }
 }
 
 .additional-products__item {
@@ -88,12 +55,18 @@
   padding: 10px 0 17px;
 
   @media (min-width: $tablet-width) {
-    padding: 21px 39px 24px;
+    padding: 21px 38px 29px;
     border-top: none;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
-    padding: 16px 0 0;
+    justify-content: center;
+    padding: 14px 0 17px;
+    border-top: 1px solid #cdcdcd;
+
+    &:last-child {
+      border-bottom: 1px solid #cdcdcd;
+    }
   }
 }

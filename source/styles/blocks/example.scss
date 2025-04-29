@@ -1,11 +1,11 @@
 .example {
   background: #eaeaea;
-  padding: 20px 20px 0;
+  padding: 20px 20px 40px;
   position: relative;
 
   @media (min-width: $tablet-width) {
     background-color: #ffffff;
-    padding: 30px 30px 14px;
+    padding: 30px 0 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -23,6 +23,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     margin: 0 0 47px;
+    padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -59,7 +60,7 @@
     line-height: 24px;
     color: #444444;
     margin: 0;
-    padding-bottom: 56px;
+    padding: 0 30px 56px;
   }
 
   @media (min-width: $desktop-width) {
@@ -73,7 +74,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 71px;
+    padding: 0 30px 230px;
   }
 
   @media (min-width: $desktop-width) {
@@ -86,7 +87,7 @@
   padding: 0;
   display: flex;
   justify-content: space-between;
-  margin: 0 0 33px;
+  margin: 0 0 19px;
 
   @media (min-width: $tablet-width) {
     width: 380px;
@@ -105,17 +106,13 @@
 }
 
 .example__slider {
-  width: 280px;
-  height: 256px;
-  background: #444444;
-
   @media (min-width: $tablet-width) {
-    width: 560px;
-    height: 512px;
+    background: #eaeaea;
   }
 
   @media (min-width: $desktop-width) {
     position: static;
     margin-top: -132px;
+    background: #f2f2f2;
   }
 }

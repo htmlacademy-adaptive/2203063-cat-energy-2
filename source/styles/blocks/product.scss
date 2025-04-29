@@ -32,11 +32,12 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    width: 335px;
-    margin-bottom: 0;
+    width: 327px;
+    align-content: center;
   }
 }
 
@@ -55,6 +56,12 @@
     margin: 0;
     padding-top: 8px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 242px 82px;
+    padding-top: 12px;
+  }
 }
 
 .product__quantity {
@@ -67,6 +74,11 @@
   @media (min-width: $tablet-width) {
     width: 92px;
     text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    width: auto;
   }
 }
 
