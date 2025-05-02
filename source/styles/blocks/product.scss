@@ -93,6 +93,9 @@
   font-family: "Oswald", "arial", sans-serif;
   font-size: 16px;
   line-height: 40px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
 
   &:focus,
   &:hover {

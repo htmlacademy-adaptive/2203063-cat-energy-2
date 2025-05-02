@@ -64,7 +64,6 @@
 .slider__screen--before {
   z-index: 10;
   width: 50%;
-  // background-color: red;
 }
 
 .slider--before .slider__screen--before {
@@ -77,7 +76,6 @@
 
 .slider__screen--after {
   z-index: 5;
-  // background-color: orange;
 }
 
 .slider__img {
@@ -140,7 +138,12 @@
   }
 
   &:active {
-    color: rgba($theme, 0.3);
+    color: rgba(#5eaa2f, 0.6);
+  }
+
+  &:disabled {
+    background: #afbab3;
+    opacity: 0.5;
   }
 }
 
@@ -154,9 +157,17 @@
   border-color: $theme;
 }
 
+.slider__toggle:active::after {
+  border-color: rgba(#5eaa2f, 0.6);
+}
+
 .slider__toggle:hover::before,
 .slider__toggle:focus::before {
   background-color: $theme;
+}
+
+.slider__toggle:active::before {
+  background-color: rgba(#5eaa2f, 0.6);
 }
 
 .slider--before .slider__toggle {

@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     min-width: 63%;
   }
+
+  @media (min-width: $desktop-width) {
+    min-width: auto;
+  }
 }
 
 .nav__toggle {

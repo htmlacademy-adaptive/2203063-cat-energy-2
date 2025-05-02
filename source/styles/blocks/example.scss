@@ -42,21 +42,21 @@
 }
 
 .example__block {
-  @media (min-width: $tablet-width) {
-    & div {
-      padding-bottom: 36px;
-    }
-  }
-
   @media (min-width: $desktop-width) {
     display: flex;
     width: 1220px;
     margin: 0 auto;
     justify-content: space-between;
+  }
+}
 
-    & div {
-      padding-bottom: 0;
-    }
+.example__wrapper {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
   }
 }
 
@@ -118,6 +118,7 @@
   @media (min-width: $tablet-width) {
     background: #eaeaea;
     position: relative;
+    padding-bottom: 101px;
 
     &::before {
       content: "";
@@ -135,6 +136,7 @@
     position: static;
     margin-top: -132px;
     background: #f2f2f2;
+    padding-bottom: 0;
 
     &::before {
       display: none;
