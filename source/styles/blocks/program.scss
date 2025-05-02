@@ -20,10 +20,6 @@
     padding: 69px 314px 60px 52px;
     margin-bottom: 30px;
 
-    &:last-child {
-      margin-bottom: 0;
-    }
-
     &::after {
       width: 200px;
       height: 200px;
@@ -34,7 +30,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
+    margin: 0 0 40px;
     padding: 68px 52px 62px;
 
     &::after {
@@ -207,5 +203,10 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  &:disabled {
+    background: #afbab3;
+    opacity: 0.5;
   }
 }
