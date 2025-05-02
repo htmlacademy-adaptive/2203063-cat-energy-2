@@ -1,0 +1,28 @@
+.page__body--index {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      z-index: 1;
+      content: "";
+      width: 50%;
+      height: 600px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: #414045;
+    }
+
+    &::after {
+      z-index: 2;
+      content: "";
+      width: 50%;
+      height: 600px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: $theme;
+      opacity: 0.85;
+    }
+  }
+}

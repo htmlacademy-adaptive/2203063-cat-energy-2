@@ -6,6 +6,7 @@
     url("../../images/map-m@1x.jpg") type("image/jpg") 1x,
     url("../../images/map-m@2x.webp") type("image/jpg") 2x);
   background-repeat: no-repeat;
+  background-size: cover;
 
   @media (min-width: $tablet-width) {
     background-image:

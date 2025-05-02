@@ -93,6 +93,9 @@
   font-family: "Oswald", "arial", sans-serif;
   font-size: 16px;
   line-height: 40px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
 
   &:focus,
   &:hover {
@@ -101,10 +104,5 @@
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
-  }
-
-  &:disabled {
-    background: #afbab3;
-    opacity: 0.5;
   }
 }

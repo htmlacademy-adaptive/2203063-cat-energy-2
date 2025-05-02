@@ -13,9 +13,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    justify-content: space-between;
     max-width: 100%;
-    width: 475px;
+    gap: 0 34px;
+    width: 492px;
+    justify-content: flex-end;
   }
 }
 
